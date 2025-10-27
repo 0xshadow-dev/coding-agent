@@ -7,7 +7,7 @@ async fn main() -> Result<()> {
     let api_key = std::env::var("GEMINI_API_KEY")?;
 
     println!("Environment loaded");
-    println!("API KEY FOUND");
+    println!("✓ API key found: {}...", &api_key[..20]);
     println!("Async runtime working");
 
     Ok(())
